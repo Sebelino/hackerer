@@ -5,7 +5,7 @@ This is a simple green theme for hackers and other cool people.
 ## Getting started
 
 1. Clone the repository with `git clone https://www.opencode.net/infinity64/hackerer.git` or download the zip archive
-2. Move the files to either `~/.themes`, `~/.local/share/themes`, or `/usr/share/themes`
+2. Move the `Hackerer` directory to either `~/.themes`, `~/.local/share/themes`, or `/usr/share/themes`
 
 ## Screenshots
 
