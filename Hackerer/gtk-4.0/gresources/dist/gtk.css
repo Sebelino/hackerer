@@ -43,7 +43,7 @@
 @define-color background_bg_color @bg_color;
 
 /* Background color of chrome tabs when window is focused */
-@define-color titlebar_bg_color @bg_color;
+@define-color titlebar_bg_color #101010;
 
 /* Background color of unfocused chrome tabs when unfocusing the chromium window */
 @define-color titlebar_backdrop_bg_color @bg_color;
