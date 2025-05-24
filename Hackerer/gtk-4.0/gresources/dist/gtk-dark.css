@@ -4860,3 +4860,34 @@ TerminalNotebook.notebook {
     color: mix(#00ff00,#000000,0.15); }
   TerminalNotebook.notebook .active-page, TerminalNotebook.notebook .active-page GtkLabel {
     color: #00ff00; }
+
+
+modelbutton.flat,
+menuitem.button.flat {
+  padding: 3px;
+  padding-left: 3px;
+  transition: none; }
+  modelbutton.flat:hover,
+  menuitem.button.flat:hover {
+    border-radius: 0px;
+    background-color: #00ff00;
+    color: #000000; }
+  modelbutton.flat:checked,
+  menuitem.button.flat:checked {
+    color: #00ff00; }
+  modelbutton.flat arrow.left,
+  menuitem.button.flat arrow.left {
+    -gtk-icon-source: -gtk-icontheme("pan-start-symbolic"); }
+  modelbutton.flat arrow.right,
+  menuitem.button.flat arrow.right {
+    -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
+  modelbutton.flat check:last-child,
+  modelbutton.flat radio:last-child,
+  menuitem.button.flat check:last-child,
+  menuitem.button.flat radio:last-child {
+    margin-left: 8px; }
+  modelbutton.flat check:first-child,
+  modelbutton.flat radio:first-child,
+  menuitem.button.flat check:first-child,
+  menuitem.button.flat radio:first-child {
+    margin-right: 8px; }
