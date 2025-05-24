@@ -51,8 +51,14 @@
 /* Background color of menu that appears when right-clicking in chromium */
 @define-color menu_bg_color @bg_color;
 
-/* Color of background of selected text, address bar background, search bar background */
+/* Color address bar background, search bar background */
 @define-color view_bg_color #111111;
+
+/* Color of selected text when unfocusing the window */
+@define-color textview_color #008800;
+
+/* Background color of selected text, including that in the search bar */
+@define-color textview_bg_color @bg_color;
 
 
 /* Not sure what these affect. They came with the package. */
@@ -4953,3 +4959,10 @@ menuitem.button.flat {
   menuitem.button.flat check:first-child,
   menuitem.button.flat radio:first-child {
     margin-right: 8px; }
+
+
+/* Selected text, including in search bar */
+textview text selection {
+  background-color: @textview_bg_color;
+  color:            @textview_color;
+}
