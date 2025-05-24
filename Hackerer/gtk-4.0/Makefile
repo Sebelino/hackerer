@@ -3,5 +3,5 @@ original-gresources:
 	mv original-gresources.tmp/org/numixproject/gtk/ original-gresources
 	rm -r original-gresources.tmp
 
-gtk.gresource: gresources
+gtk.gresource: gresources/dist/gtk.css
 	glib-compile-resources ./gtk.gresource.xml --sourcedir=./gresources --target gtk.gresource
