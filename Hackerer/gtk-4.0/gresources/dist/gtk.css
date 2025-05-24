@@ -1,5 +1,5 @@
 /* Unknown color */
-@define-color u_color #ff00ff;
+@define-color u_color #2f002f;
 
 /* Hidden, I have been unable to detect elements with this color */
 @define-color h_fg_color #00ffff;
@@ -36,7 +36,24 @@
 @define-color menu_hover_bg_color @fg_color;
 
 /* Color of selected text, domain in address bar, icons inside the address bar, and foreground in the search bar (except 0/0 part) */
-@define-color view_color @fg_color;
+@define-color view_fg_color @fg_color;
+
+
+/* Selected/hovered-over chrome tab background color + some of the chrome icons */
+@define-color background_bg_color @bg_color;
+
+/* Background color of chrome tabs when window is focused */
+@define-color titlebar_bg_color @bg_color;
+
+/* Background color of unfocused chrome tabs when unfocusing the chromium window */
+@define-color titlebar_backdrop_bg_color @bg_color;
+
+/* Background color of menu that appears when right-clicking in chromium */
+@define-color menu_bg_color @bg_color;
+
+/* Color of background of selected text, address bar background, search bar background */
+@define-color view_bg_color #111111;
+
 
 /* Not sure what these affect. They came with the package. */
 @define-color light_shadow #010101;
@@ -149,7 +166,7 @@
     color: #0000ee; }
 
 .background {
-  background-color: @bg_color;
+  background-color: @background_bg_color;
   color: @background_color; }
   .background:backdrop {
     text-shadow: none;
@@ -948,12 +965,12 @@ GtkComboBox .separator {
     color: @h_fg_color; }
 
 .titlebar {
-  background-color: @bg_color;
+  background-color: @titlebar_bg_color;
   background-image: none;
   border-radius: 0px 0px 0 0;
   color: @titlebar_color; }
   .titlebar:backdrop {
-    background-color: @bg_color;
+    background-color: @titlebar_backdrop_bg_color;
     background-image: none;
     color: mix(@titlebar_backdrop_color,@bg_color,0.4);
     text-shadow: none; }
@@ -2108,7 +2125,7 @@ GtkTreeMenu.menu, GtkTreeMenu .menu, GtkMenuToolButton.menu, GtkMenuToolButton .
   padding: 0;
   border-radius: 0;
   border: 1px solid mix(@bg_color,@h_fg_color,0.21);
-  background-color: @bg_color;
+  background-color: @menu_bg_color;
   color: @menu_color; }
   #toolbar-popup:selected, .menu:selected {
     background-color: @h_fg_color; }
@@ -3927,8 +3944,8 @@ GtkSwitch {
   -GtkTextView-error-underline-color: #ff0000; }
 
 .view, GtkHTML {
-  color: @view_color;
-  background-color: @bg_color; }
+  color: @view_fg_color;
+  background-color: @view_bg_color; }
   .view:insensitive, GtkHTML:insensitive, .view:insensitive:insensitive, GtkHTML:insensitive:insensitive {
     background-color: black;
     color: mix(@h_fg_color,@bg_color,0.5); }
