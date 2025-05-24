@@ -35,10 +35,8 @@
 /* Color of selected text, domain in address bar, icons inside the address bar, and foreground in the search bar (except 0/0 part) */
 @define-color view_color @fg_color;
 
-/* Not sure what this affects. It came with the package. */
+/* Not sure what these affect. They came with the package. */
 @define-color light_shadow #010101;
-
-/* Not sure what this affects. It came with the package. */
 @define-color text_shadow #006600;
 
 /*$dark_shadow: #000;*/
