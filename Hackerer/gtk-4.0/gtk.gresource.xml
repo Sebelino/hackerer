@@ -43,6 +43,5 @@
 		<file>assets/pane-handle.png</file>
 		<file>assets/pane-handle@2.png</file>
 		<file>dist/gtk.css</file>
-		<file>dist/gtk-dark.css</file>
 	</gresource>
 </gresources>
