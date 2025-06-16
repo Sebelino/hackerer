@@ -52,7 +52,7 @@
 @define-color menu_bg_color @bg_color;
 
 /* Color address bar background, search bar background */
-@define-color view_bg_color #111111;
+@define-color view_bg_color #303030;
 
 /* Color of selected text when unfocusing the window */
 @define-color textview_color #008800;
